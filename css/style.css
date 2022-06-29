@@ -124,12 +124,12 @@ img {
 }
 .hero__grid{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
 }
-@media (min-width: 768px){
+@media (max-width: 480px){
     .hero__grid{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 .hero__texto{
@@ -153,7 +153,7 @@ img {
 .hero__texto a:hover{
     background-color: #fa2302;
 }
-@media (max-width: 768px){
+@media (max-width: 480px){
     .hero__texto a{
         display: none;
     }
@@ -174,17 +174,17 @@ img {
 .btn__abajo:hover{
     background-color: #fa2302;
 }
-@media (min-width: 768px){
+@media (min-width: 480px){
     .btn__abajo{
         display: none;
     }
 }
-@media (min-width: 768px){
+@media (min-width: 480px){
     .hero__texto a{
         max-width: 30%
     }
 }
-@media (min-width: 768px){
+@media (min-width: 480px){
     .hero__texto{
         max-width: 90%
     }
@@ -213,11 +213,11 @@ img {
 }
 .main__grid{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
-@media (min-width: 768px){
+@media (max-width: 480px){
     .main__grid{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 .main__card img{
@@ -246,11 +246,11 @@ img {
 }
 .footer__grid{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
-@media (min-width: 768px){
+@media (max-width: 480px){
     .footer__grid{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 .footer__heading{
@@ -259,7 +259,7 @@ img {
     font-size: 2rem;
     margin-left: 5rem;
 }
-@media (min-width: 768px){
+@media (min-width: 480px){
     .footer__heading{
         margin-left: 0;
     }
@@ -268,7 +268,7 @@ img {
     color: #272624;
     margin-left: 5rem;
 }
-@media (min-width: 768px){
+@media (min-width: 480px){
     .footer__texto{
         margin-left: 0;
     }
@@ -278,7 +278,7 @@ img {
     flex-direction: column;
     margin-left: 5rem;
 }
-@media (min-width: 768px){
+@media (min-width: 480px){
     .footer__navegacion{
         margin-left: 0;
     }
@@ -308,27 +308,27 @@ img {
 /** SECCION CSS GALERIA **/
 .galeria__grid{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
     padding-top: 7rem;
 }
-@media (min-width: 768px){
+@media (max-width: 480px){
     .galeria__grid{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
 /* FORMULARIO */
 .grid__formulario{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
     -webkit-box-shadow: 11px 22px 24px -3px rgba(66, 68, 90, 1);
     -moz-box-shadow: 11px 22px 24px -3px rgba(66, 68, 90, 1);
     box-shadow: 11px 22px 24px -3px rgba(66, 68, 90, 1);
 }
-@media (min-width: 768px){
+@media (max-width: 480px){
     .grid__formulario{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 .info__contacto{
@@ -383,7 +383,7 @@ img {
     /* margin-bottom: 4rem; */
     margin: 0 auto 4rem auto;
 }
-@media (min-width: 768px){
+@media (min-width: 480px){
     .formulario legend{
         width: 100%;
         margin: 0 auto 4rem auto;
@@ -395,7 +395,7 @@ img {
     margin-bottom: 2rem;
     flex-direction: column;
 }
-@media (min-width: 768px){
+@media (min-width: 480px){
     .campo{
         flex-direction: row;
     }
@@ -403,7 +403,7 @@ img {
 .campo label {
     flex-basis: 0;
 }
-@media (min-width: 768px){
+@media (min-width: 480px){
     .campo label {
         flex-basis: 10rem;
     }
@@ -432,7 +432,7 @@ img {
     cursor: pointer;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 480px) { 
     .btn {
         width: auto;
     }
@@ -442,22 +442,22 @@ img {
 /** SECCION PERSONAJES INICIO **/
 .personajes{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
-@media (min-width: 768px){
+@media (max-width: 480px){
     .personajes{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 .personaje{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-@media (min-width: 768px){
+@media (max-width: 480px){
     .personaje{
-        flex-direction: row;
+        flex-direction: column;
     }
 }
 /* .personaje__imagen img{
@@ -473,14 +473,14 @@ img {
 /* SECCION HISTORIA INICIO */
 .historia__grid{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 2rem;
     align-items: center;
 }
-@media (min-width: 768px){
+@media (max-width: 480px){
     .historia__grid{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 2rem;
         align-items: center;
     }
@@ -494,11 +494,11 @@ img {
 /* SECCION BANDA SONORA INICIO */
 .bonda__info{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
-@media (min-width: 768px){
+@media (max-width: 480px){
     .bonda__info{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 .banda__imagen img{
@@ -509,11 +509,11 @@ img {
 }
 .letra__grid{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
-@media (min-width: 768px){
+@media (max-width: 480px){
     .letra__grid{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 .banda__musica iframe{
